@@ -75,8 +75,11 @@ html, body {
 	-ms-transition: @prop @time @ease;
 	transition: @prop @time @ease;
 }
+// -----Variables-----*
+@lobster: 'Lobster', cursive;
+@roboto: 'Roboto', sans-serif;
 
-
+ 
 // -------nav------*
 header {
 	width: 69%;
@@ -86,6 +89,7 @@ header {
 		display: flex;
 		justify-content: center;
 		background-color: rgba(100, 148, 237, 0.76);
+		border: 2px solid black;
 		.border-radius();
 
 		a {
@@ -116,23 +120,31 @@ header {
 		display: flex;
 		flex-direction: column;
 		padding-top: 10px;
+		padding-bottom: 20px;
+		border: 2px solid black;
+		.border-radius();
 	}
 }
 	h1, h2 {
-		font-family: 'Lobster', cursive;
+		font-family: @lobster;
 		font-size: 28px;
 		margin: 0 auto;
+		padding-bottom: 10px;
 	}
 	p {
 		margin: 0 auto;
-		font-family: 'Roboto', sans-serif;
+		font-family: @roboto;
 		font-size: 17px;
 	}
 	img {
 		height: 389px;
 		width: 44%;
-		padding: 30px;
+		padding: 0px;
 		margin: 0 auto;
+		border: 2px solid black;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		.border-radius(10px);
 	}
 	.text-container {
 		margin: 0 auto;
@@ -145,4 +157,62 @@ header {
 		.border-radius();
 		padding: 10px 10px;
 		margin: 0 auto;
+		margin-right: 337px;
 	}
+// --------MAIN CONTENT--------*
+.main-content {
+	background-color: cornflowerblue;
+	padding-top: 20px;
+	border: 2px solid black;
+	.border-radius();
+
+	.main-section {
+		display: flex;
+		padding-top: 20px;
+
+		.one {
+			height: 300px;
+			width: 50%;
+			padding-left: 130px;
+		}
+	}
+}
+
+ul {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: rgb(58, 84, 133);
+	
+	li {
+		margin: 15px;
+		background: rgb(171, 194, 236);
+		font-family: @roboto;
+		padding-left: 30px;
+		padding-right: 20px;
+	}
+}
+//--------BOTTOM CONTENT-----------*
+.bottom-content {
+
+	.bottom-section {
+		display: flex;
+		flex-direction: column;
+	}
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+
+	th, td {
+		text-align: left;
+		padding: 8px;
+	}
+}
+		tr:nth-child(odd) {
+			background-color: rgb(49, 88, 160);
+
+			th {
+				background-color: rgb(78, 76, 175);
+				color: white;
+			}
+		}
