@@ -137,6 +137,7 @@ body {
 .container {
   width: 880px;
   margin: 0 auto;
+  background-color: #c4d7fa;
 }
 header {
   width: 69%;
@@ -160,7 +161,7 @@ header nav a {
   padding: 7px 0px 17px 0px;
   font-family: 'Lobster', cursive;
   font-size: 23px;
-  color: #3960a8;
+  color: #1648a5;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
@@ -228,6 +229,7 @@ button {
   margin-right: 337px;
 }
 .main-content {
+  margin-top: 20px;
   background-color: cornflowerblue;
   padding-top: 20px;
   border: 2px solid black;
@@ -260,6 +262,7 @@ ul li {
   background-color: cornflowerblue;
   border: 2px solid black;
   padding: 30px 0px 23px 0px;
+  margin-top: 20px;
 }
 .bottom-content .bottom-section {
   display: flex;
@@ -285,5 +288,76 @@ tr:nth-child(odd) th {
 }
 tr:nth-child(odd) th td {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+}
+/* CONTACT */
+/* Style inputs, select elements and textareas */
+.contact-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  background-color: cornflowerblue;
+  border: 2px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.contact-container .contact-me {
+  margin: 0 auto;
+  padding-bottom: 16px;
+  padding-left: 152px;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+  padding: 18px 15px 20px 48px;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color: #393648;
+  color: white;
+  padding: 2px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 153px;
+  margin-top: 37px;
+}
+/* Style the container */
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 18%;
+}
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
