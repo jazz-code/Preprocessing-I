@@ -256,6 +256,11 @@ ul li {
   padding-left: 30px;
   padding-right: 20px;
 }
+.bottom-content {
+  background-color: cornflowerblue;
+  border: 2px solid black;
+  padding: 30px 0px 23px 0px;
+}
 .bottom-content .bottom-section {
   display: flex;
   flex-direction: column;
@@ -274,5 +279,11 @@ tr:nth-child(odd) {
 }
 tr:nth-child(odd) th {
   background-color: #4e4caf;
-  color: white;
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 23px;
+}
+tr:nth-child(odd) th td {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }

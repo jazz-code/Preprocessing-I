@@ -193,26 +193,37 @@ ul {
 }
 //--------BOTTOM CONTENT-----------*
 .bottom-content {
+	background-color: cornflowerblue;
+	border: 2px solid black;
+	padding: 30px 0px 23px 0px;
 
 	.bottom-section {
 		display: flex;
 		flex-direction: column;
 	}
 }
-table {
-	border-collapse: collapse;
-	width: 100%;
+//------ TABLE------------------*
+	table {
+		border-collapse: collapse;
+		width: 100%;
 
-	th, td {
-		text-align: left;
-		padding: 8px;
-	}
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
 }
-		tr:nth-child(odd) {
-			background-color: rgb(49, 88, 160);
+	tr:nth-child(odd) {
+		background-color: rgb(49, 88, 160);
 
-			th {
-				background-color: rgb(78, 76, 175);
-				color: white;
+		th {
+			background-color: rgb(78, 76, 175);
+			color: black;
+			font-family: @lobster;
+			font-size: 23px;
+
+			td {
+				font-family: @roboto;
+				font-size: 18px;
 			}
 		}
+	}
