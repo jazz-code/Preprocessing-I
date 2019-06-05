@@ -8,12 +8,147 @@
 
   <link rel="stylesheet" href="css/index.css">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!-- -----------NAV --------------->
+          <header>
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="#">About</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Contact</a>
+            </nav>
+          </header>
+<!-- ------------CONTAINER---------------- -->
+    <div class="container">
+<!----------------TOP CONTENT----------------->
+            <div class="top-content">
+              <section class="top-section">
+                <h1>Sun Ra</h1>
+                  <h2>Intergalactic Web Dev</h2>
+                    <p>Space Technology is my Jam!</p>
+                      <img src="/images/sunra.jpg" alt="Sun Ra">
+                        <div class="text-container">
+                          <p>When I'm not traversing the infinity of space-time via the universal language of music, I'm always down to work on side projects<br/><br/>
+                          If you're interested, let me know by playing Plutonian Nights on a Wurlitzer Electric Piano</p>
+                        </div>
+                          <button>Play Plutonian Nights Here</button>
+              </section>
+            </div>
+<!----------------MAIN CONTENT---------------->
+            <div class="main-content">
+              <section class="main-section">
+                <section class="one">
+                  <h1>Listen Up...</h1>
+                    <p>The satellites are spinning<br />
+                        A new day is dawning<br />
+                        The galaxies are waiting<br />
+                        For planet Earth’s awakening<br />
+                        <br />
+                        Oh we sing this song to<br />
+                        A brave tomorrow.<br />
+                        Oh we sing this song to<br />
+                        Abolish sorrow.<br />
+                        <br />
+                        The satellites are spinning<br />
+                        A better day is breaking<br />
+                        The galaxies are waiting<br />
+                        For planet Earth’s awakening.</p>
+                      </section>
+                    <section class="two">
+                      <h1>Stuff I'm Good At:</h1>
+                        <ul>
+                          <li>Coding in obscure programming languages</li>
+                          <li>Creating world renown culture</li>
+                          <li>A E S T H E T I C</li>
+                          <li>Responsive Web Design</li>
+                          <li>A master of Flexbox</li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+<!------------------BOTTOM CONTENT----------->
+            <div class="bottom-content">
+              <section class="bottom-section">
+                <h1>Work History</h1>
+<!-------------------TABLE------------------->
+                  <table>
+                    <tr>
+                      <th>Yrs</th>
+                      <th>Company</th>
+                      <th>Title</th>
+                      <th>Tech Used</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Google</td>
+                      <td>Software Engineer</td>
+                      <td>Java</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Microsoft</td>
+                      <td>Computer Scientist</td>
+                      <td>.NET</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Amazon</td>
+                      <td>Dev Ops</td>
+                      <td>AWS</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Pied Piper</td>
+                      <td>Full-stack Dev</td>
+                      <td>Javascript</td>
+                    </tr>
+                  </table>
+              </section>
+            </div>
+<!----------------CONTACT--------------------- -->
+            <div class="contact-container">
+                <h2 class="contact-me">Contact Me</h2>
+              <form action="action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">First Name</label>
+              </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+                  <div class="row">
+                  <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                  <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+
+          
+<!----------------FOOTER-------------------->
+            <footer>
+              Copyright Sun Ra Inc 2019
+            </footer>
+    </div>
+<!--CONTAINER-->
 </body>
 </html>
