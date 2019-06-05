@@ -182,9 +182,34 @@ a:hover {
   flex-direction: column;
   padding-top: 10px;
 }
+h1,
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  margin: 0 auto;
+}
+p {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
 img {
   height: 389px;
   width: 44%;
   padding: 30px;
+  margin: 0 auto;
+}
+.text-container {
+  margin: 0 auto;
+  width: 42%;
+  padding-bottom: 18px;
+}
+button {
+  background-color: cornflowerblue;
+  border: 2px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 10px;
   margin: 0 auto;
 }
